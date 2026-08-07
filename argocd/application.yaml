@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: nginx-app
+
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/sevinc0/devops-tools-learning.git
+    targetRevision: main
+    path: helm
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
