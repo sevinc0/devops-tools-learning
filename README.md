@@ -21,3 +21,13 @@ Bu bölüm Git branch ve Pull Request sürecini göstermek amacıyla eklenmişti
 - README.md güncellendi.
 - Commit oluşturuldu.
 - Pull Request açılacaktır.
+
+## Jenkins
+
+- Jenkins Pipeline
+- Jenkinsfile örneği
+- Build
+- Test
+- Deploy
+- Agent
+- Stage
